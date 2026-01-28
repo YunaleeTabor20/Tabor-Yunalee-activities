@@ -1,0 +1,85 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fce7f3, #f3e8ff);
+        }
+
+        .calculator {
+            width: 240px;
+            margin: 60px auto;
+            padding: 18px;
+            border-radius: 18px;
+            background: #f9a8d4; /* pink base */
+            box-shadow: 0 10px 25px rgba(190, 24, 93, 0.35);
+        }
+
+        /* DISPLAY AREA */
+        .display {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 15px;
+        }
+
+        #valueBox {
+            width: 75%;
+            height: 60px;
+            font-size: 26px;
+            text-align: right;
+            padding: 10px;
+            background: #fff1f2;
+            border-radius: 12px;
+            border: 2px solid #db2777;
+            color: #9d174d;
+        }
+
+        #operatorBox {
+            width: 25%;
+            height: 60px;
+            font-size: 26px;
+            text-align: center;
+            padding: 10px;
+            background: #fde2f3;
+            border-radius: 12px;
+            border: 2px solid #db2777;
+            color: #a21caf;
+            font-weight: bold;
+        }
+
+        /* BUTTONS */
+        .btn {
+            height: 46px;
+            width: 46px;
+            margin: 4px;
+            border-radius: 12px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            background: #ec4899; /* pink */
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #be185d;
+            transform: scale(1.05);
+        }
+
+        .button {
+            height: 46px;
+            width: 98px;
+            margin: 4px;
+            border-radius: 12px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            background: #d946ef; /* violet-pink */
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #a21caf;
+            transform: scale(1.05);
+        }
