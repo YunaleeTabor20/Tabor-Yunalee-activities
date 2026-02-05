@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Information</title>
+  <link rel="stylesheet" href="./css/student-info.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Student Information</h2>
+
+    <!-- Search -->
+    <div>
+      <input type="text" id="searchInput" placeholder="Search student name">
+      <button id="searchBtn">Search</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <br>
+
+    <!-- FILTER BUTTONS -->
+    <div>
+      <button id="presentBtn">Present</button>
+      <button id="absentBtn">Absent</button>
+      <button id="passedBtn">Passed</button>
+      <button id="failedBtn">Failed</button>
+    </div>
+
+    <br><br>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Sub 1</th>
+          <th>Sub 2</th>
+          <th>Sub 3</th>
+          <th>Ave</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody id="studentTable">
+        <!-- JS inserts rows -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./js/student-info.js"></script>
+</body>
+</html>
