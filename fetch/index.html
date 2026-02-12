@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login & Student List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- ================= LOGIN SECTION ================= -->
+    <div id="loginSection" class="login-container">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+
+    <!-- ================= STUDENT SECTION ================= -->
+    <div id="studentSection" style="display: none; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Student List</h2>
+            <button id="logoutBtn" class="logout-button">Logout</button>
+        </div>
+
+        <table border="1" width="100%" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Year Level</th>
+                    <th>Enrollment Date</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <!-- Students will appear here -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- JS FILE -->
+    <script src="./js/fetch.js"></script>
+
+</body>
+</html>
